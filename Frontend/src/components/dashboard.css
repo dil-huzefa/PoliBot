@@ -1,0 +1,136 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .app-header {
+    background-color: #f0f0f0; /* Light gray header background */
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1; /* Allow main content to take remaining vertical space */
+  }
+  
+  .document-list-container {
+    width: 250px; /* Adjust width as needed */
+    padding: 20px;
+    border-right: 1px solid #eee;
+    overflow-y: auto; /* Make the document list scrollable if it's long */
+  }
+  
+  .document-list-container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .document-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .document-list-container li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .document-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  .expand-icon {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .document-details {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .document-details button {
+    padding: 8px 15px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .document-viewer-container {
+    flex: 1; /* Take up remaining horizontal space */
+    padding: 20px;
+    overflow: auto; /* Make the viewer scrollable */
+  }
+  
+  .document-viewer-container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .document-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .scrollable-content {
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow-y: auto;
+    height: 400px; /* Adjust the initial height as needed */
+  }
+  
+  .chatbot-container {
+    width: 200px; /* Adjust width for the chatbot area */
+    padding: 20px;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push the icon to the bottom */
+    align-items: center;
+  }
+  
+  .chatbot-icon {
+    cursor: pointer;
+    /* Add more styling for the icon */
+  }
+
+
+  /* ... other CSS rules ... */
+
+.doc-viewer-wrapper {
+    flex: 1;
+    overflow: hidden; /* Prevent scrollbars on the wrapper, the DocViewer handles it */
+    height: 100%; /* Or a specific height like 500px */
+  }
+  
+  /* You might need to adjust the word-editor-theme further based on how DocViewer renders */
+  .document-viewer-container.word-editor-theme {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* To make the DocViewer take full height */
+    flex-direction: column;
+  }
+  
+  .document-viewer-container.word-editor-theme > h2 {
+    padding: 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .document-viewer-container.word-editor-theme > .doc-viewer-wrapper {
+    flex: 1; /* Allow DocViewer to take remaining vertical space */
+  }
+  
+  /* ... other CSS rules ... */

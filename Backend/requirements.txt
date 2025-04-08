@@ -8,4 +8,5 @@ langchain-google-genai
 pymilvus
 unstructured
 python-docx
+python-multipart
 
